@@ -1,0 +1,12 @@
+<layout id="MainLayout" background="Gfx.COLOR_BLACK">
+	<!-- 205 x 148 -->
+	<!-- Top label -->
+	<label text="Battery Status" font='Gfx.FONT_SMALL' x="center" y="0" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER"/>
+	
+	<!-- Big label showing battery percentage -->	
+	<label id="BatteryState" text="100" font="Gfx.FONT_NUMBER_HOT" 
+		x="center" y="40" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
+	
+
+	
+</layout>

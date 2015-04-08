@@ -1,0 +1,15 @@
+<resources>
+	<!-- 205 x 148 -->
+    <string id="AppName">BatteryWidget</string>
+
+    <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+    
+	<drawable-list id="Battery" background="Gfx.COLOR_BLACK">
+	   	<shape type="rectangle" x="30" y="100" width="145" height="40"
+	   		color="Gfx.COLOR_BLACK" border_width="2" border_color="Gfx.COLOR_WHITE" corner_radius="3"/>
+	   	<shape type="rectangle" x="173" y="110" width="10" height="20"
+	   		color="Gfx.COLOR_BLACK" border_width="2" border_color="Gfx.COLOR_WHITE" corner_radius="3"/>
+
+	</drawable-list>
+
+</resources>
