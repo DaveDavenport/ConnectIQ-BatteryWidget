@@ -4,5 +4,5 @@ Small widget for showing actual battery status.
 
 ## Screenshot
 
-!(Screenshot)[Screenshot.png]
+![Screenshot](Screenshot.png)
 
