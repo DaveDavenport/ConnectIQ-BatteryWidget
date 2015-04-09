@@ -32,7 +32,7 @@ class BatteryWidgetView extends Ui.View {
     function onUpdate(dc) {
     
     	var stat = Sys.getSystemStats();
-    	var bats = 100;//stat.battery;
+    	var bats = stat.battery;
 		var bstatestr = bats.format("%.0f")+"%";
 		
 		
