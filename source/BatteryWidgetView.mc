@@ -30,7 +30,7 @@ class BatteryWidgetView extends Ui.View {
 
     //! Update the view
     function onUpdate(dc) {
-    
+        var dev = Sys.getDeviceSettings(); 
     	var stat = Sys.getSystemStats();
     	var bats = stat.battery;
 		var bstatestr = bats.format("%.0f")+"%";
@@ -51,10 +51,13 @@ class BatteryWidgetView extends Ui.View {
         		width = (bats-iter);
         	}
             var color = colorsteps[iter/10];
-			dc.setColor(color,color,color);
+			dc.setColor(color,color);
 			dc.fillRoundedRectangle(36+iter*1.38,103, width, 34, 3);
 		}
-       
+        if(dev.phoneConnected) { 
+            dc.setColor(Gfx.COLOR_WHITE,Gfx.COLOR_BLACK); 
+            dc.drawText(10,10, Gfx.FONT_MEDIUM, "(c)", Gfx.TEXT_JUSTIFY_LEFT);
+        }
     }
 
     //! Called when this View is removed from the screen. Save the
