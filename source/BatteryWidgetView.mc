@@ -57,6 +57,9 @@ class BatteryWidgetView extends Ui.View {
         if(dev.phoneConnected) { 
             dc.setColor(Gfx.COLOR_WHITE,Gfx.COLOR_BLACK); 
             dc.drawText(10,10, Gfx.FONT_MEDIUM, "(c)", Gfx.TEXT_JUSTIFY_LEFT);
+        } else {
+            dc.setColor(Gfx.COLOR_DK_GRAY,Gfx.COLOR_BLACK); 
+            dc.drawText(10,10, Gfx.FONT_MEDIUM, "(d)", Gfx.TEXT_JUSTIFY_LEFT);
         }
     }
 
